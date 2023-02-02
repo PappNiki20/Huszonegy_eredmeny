@@ -2,9 +2,8 @@
 def eredmenyek(jlapjai:list, glapjai:list):
      jpontszama = ossz(jlapjai)
      gpontszama = ossz(glapjai)
-     gkozelebb = 21-gpontszama
-     jkozelebb = 21-jpontszama
-
+if eredmenyek.jpontszama == 21 and eredmenyek.gpontszama < 21:
+        print("Játékos nyert")
 
 def ossz(lista):
     lapossz = 0
@@ -72,3 +71,9 @@ def gvesztes_gepkozelebb_huszonegyhez_teszt():
 
 
 # játékos nyert
+
+def jnyert_pont_huszonegy_teszt():
+    if eredmenyek.jpontszama == 21:
+        print("jnyert_pont_huszonegy_teszt sikeres")
+    else:
+        print("")
